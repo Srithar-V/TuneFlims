@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background: linear-gradient(rgba(0, 0, 0, 0.512),rgba(0, 0, 0, 0.592)),url('./bg.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav{
+            padding-top: 20px;
+            color: white;
+        }
+
+        .nav_right{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .nav_right > div{
+            margin-right: 30px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .search_bar{
+            display: flex;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 100px;
+            /* background: #000; */
+        }
+        .contents{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+        img[alt='logo']{
+            width: 280px;
+        }
+        .search_bar{
+            margin-top: 15px;
+            padding: 0;
+        }
+        .search_bar > input{
+            height: 45px;
+            width: 580px;
+            border-radius: 50px;
+            font-size: 20px;
+            padding: 10px 80px 10px 40px;
+            border: 1px solid gray;
+        }
+        .search_bar>input:focus{
+            border: 1px solid gray;
+            outline: none;
+        }
+        .search_icon{
+            margin-right: -35px;
+            margin-top: 13px;
+            font-size: 20px;
+            z-index: 5;
+        }
+        .mic_icon{
+            margin-left: -76px;
+            margin-top: 13px;
+            font-size: 20px;
+            z-index: 5;
+        }
+        .camera_icon{
+            margin-left: 20px;
+            margin-top: 12px;
+            font-size: 20px;
+            z-index: 5;
+        }
+        .down_suggetion{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* background: #000; */
+        }
+        .down_suggetion>div{
+            margin: 40px;
+            /* margin-top: 10px; */
+            background: gray;
+            padding: 5px 7px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        ::selection{
+            color: none;
+            background: none;
+        }
+        /* @media only screen and (max-width:600px){
+            .nav_right{
+                margin-right: -50px;
+            }
+        .search_bar > input{
+            height: 45px;
+            width: 400px;
+            border-radius: 50px;
+            font-size: 10px;
+            padding: 5px 40px 5px 20px;
+            border: 1px solid gray;
+        }
+            body{
+                background: url('./mountains-7471189_640.jpg');
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .contents{
+                margin-left: 60px;
+                margin-top: 100px;
+            }
+
+        } */
+
+
+    </style>
+
+</head>
+<body>
+    <div class="nav">
+        <div class="nav_left"></div>
+
+        <div class="nav_right">
+
+            <div class="gmail">Gmail</div>
+            <div class="image">Images</div>
+            <div class="nav_icon nav_icon1"><i class="fa-solid fa-flask"></i></div>
+            <div class="nav_icon nav_icon2"><i class="fa-solid fa-bars"></i></div>
+            <div class="nav_icon nav_icon3"><i class="fa-solid fa-user"></i></div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="contents">
+            <div class="logo">
+                <img src="./google_images-removebg-preview.png" alt="logo" />
+            </div>
+
+            <div class="search_bar">
+                <div class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <input type="text" />
+                <div class="mic_icon"><i class="fa-solid fa-microphone"></i></div>
+                <div class="camera_icon"><i class="fa-solid fa-camera"></i></div>
+            </div>
+
+            <div class="down_suggetion">
+                <div>Google Search</div>
+                <div>I'm Feeling Lucky</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
